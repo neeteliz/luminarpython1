@@ -1,24 +1,26 @@
 var range= Number(prompt("enter the range"));
 var flag=0;
-for(var i=2;i<range;i++)
+var i;
+for( i=2;i<range;i++)
 {
-    for(var j=2;j<i;j++)
+    for(j=2;j<i;j++)
     {
       if(i%j==0)
         {
-         flag++;
-         break;
+            flag++;
+            break;
         }
-    else
+      else
         {
-         flag=0;
+            flag=0;
         }
+    }
+
+   if(flag!=1)
+    {
+        console.log(i);
+    }
 
 
- if(flag==0);
-  {
-     console.log(i);
-  }
 
-}
 }
