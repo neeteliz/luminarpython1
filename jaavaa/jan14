@@ -1,0 +1,57 @@
+USING WHILE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="incre.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+
+***********************************
+i=0;
+while(i<=10)
+{
+console.log(i);
+i++;
+}
+*************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="decre.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+***********************************
+i=10;
+while(i>=0)
+{
+console.log(i);
+i--;
+}
+*************************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="for.js"></script>
+</head>
+<body>
+
+</body>
+</html>
+*****************************************
+for(i=0;i<10;i++)
+{
+console.log(i)
+}
+****************************************
