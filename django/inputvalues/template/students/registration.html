@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registration page</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<table>
+    <form name="reg" method="post" action="{% url 'printval' %}">
+        {% csrf_token %}
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="fname"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="text" name="age"></td>
+        </tr>
+        <tr>
+            <td>Phone no:</td>
+            <td><input type="text" name="phone"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="text" name="pwd"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="register" value="submit"></td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>
