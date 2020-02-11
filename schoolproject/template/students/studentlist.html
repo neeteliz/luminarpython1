@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>student details</title>
+</head>
+<body>
+<h2>the students details are here....</h2>
+<table border="1">
+    <tr>
+        <td>name</td>
+        <td>age</td>
+        <td>course</td>
+    </tr>
+     {% for i in ob %}
+    <tr>
+        <td>{{ i.name }}</td>
+        <td>{{ i.age }}</td>
+        <td>{{ i.crse }}</td>
+    </tr>
+   {% endfor %}
+
+</table>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home page</title>
+</head>
+<body>
+<h1>Welcome to Luminar Technoloab</h1>
+<table>
+    <form>
+        <tr>
+            <td><a href="{% url 'studreg'%}">student register</a></td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'viewlist' %}">view studentlist</a></td>
+        </tr>
+        <tr>
+            <td>  </td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'empreg' %}">Register Employee</a></td>
+        </tr>
+        <tr>
+            <td><a href="{% url 'viewemp' %}">View Employee</a></td>
+        </tr>
+    </form>
+</table>
+</body>
+</html>
