@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>view employee</title>
+</head>
+<body>
+<form class="example" method="POST" action="{% url 'search' %}">
+    {% csrf_token %}
+
+     <input type="text" placeholder="Search.." name="srch">
+    <input type="submit" value="search">
+</form>
+
+    <table border="1">
+    <tr>
+        <td>ename</td>
+        <td>eid</td>
+        <td>esalary</td>
+        <td>designation</td>
+    </tr>
+     {% for i in ob %}
+    <tr>
+        <td>{{ i.ename }}</td>
+        <td>{{ i.eid }}</td>
+        <td>{{i.esal}}</td>
+        <td>{{i.design}}</td>
+    </tr>
+   {% endfor %}
+
+</table>
+</body>
+</html>
